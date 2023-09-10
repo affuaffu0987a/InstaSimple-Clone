@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card{
+    height: 80vh;
+    width: 350px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    overflow-y: auto;
+    position: relative;
+    /* position: relative; */
+}
+
+#card::-webkit-scrollbar{
+    display: none;
+}
+
+.stories{
+    height: 90px;
+    /* background-color: red; */
+    /* border-radius: 10px; */
+    border-bottom: 1px solid black;
+    /* position: relative; */
+    width: 100%;
+    padding: 15px;
+    white-space: nowrap;
+    overflow-x: auto;  
+    overflow-y: hidden;
+    /* overflow: hidden;  */
+}
+.stories::-webkit-scrollbar{
+    display: none !important;
+}
+
+.story{
+    height: 60px;
+    width: 60px;
+    border: 1px solid rgb(238, 165, 106);
+    /* background-color: pink; */
+    border-radius: 50%;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+   
+}
+.story img{
+    /* border-radius: 50%; */
+    object-fit: cover;
+    object-position: center;
+}
+
+.id_image{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.name{
+display: flex;
+align-items: center;
+}
+
+.story1{
+    height: 30px;
+    width: 30px;
+    margin: 8px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* background-color: black; */
+    border: 1px solid rgb(238, 165, 106);
+    cursor: pointer;
+    /* display: inline-block; */
+    /* position: relative; */
+    /* border: 1px solid black; */
+}
+
+.story1 img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+#card img{
+    width: 100%;
+    /* height: 100vh; */
+}
+
+#screen-img{
+    position: relative;
+}
+
+.fullimg-story{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    /* background-image: url(https://timesofindia.indiatimes.com/photo/96518055/96518055.jpg?v=3); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: all linear .3s;
+    /* background-color: red; */
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between ;
+    font-size: 1.3rem;
+    padding: 3px 10px;
+    /* color: white; */
+}
+
+.icons i{
+    cursor: pointer;
+    -webkit-text-stroke: 1px black;
+    color: transparent;
+    /* border: 1px solid black; */
+}
+
+#hear1{
+    position: absolute;
+    font-size: 100px;
+    top: 30%;
+    left: 30%;
+    color: white;
+    opacity: 0;
+    transition: all linear .3s;
+    /* margin: 100px;
+    padding: 100px; */
+}
+#hear2{
+    position: absolute;
+
+    font-size: 100px;
+    top: 30%;
+    left: 30%;
+    color: white;
+    opacity: 0;
+    transition: all linear .3s;
+    /* margin: 100px;
+    padding: 100px; */
+}
+#hear3{
+    position: absolute;
+   
+    font-size: 100px;
+    top: 30%;
+    left: 30%;
+    color: white;
+    opacity: 0;
+    transition: all linear .3s;
+    /* margin: 100px;
+    padding: 100px; */
+}
+
+.image-icon{
+    width: 100%;
+    position: relative;
+}
+
+.topHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-top{
+    font-size: 26px;
+    padding: 0 6px;
+}
+.right-top i{
+    padding: 0 5px;
+    -webkit-text-stroke: 1px black;
+    color: transparent;
+    cursor: pointer;
+}
